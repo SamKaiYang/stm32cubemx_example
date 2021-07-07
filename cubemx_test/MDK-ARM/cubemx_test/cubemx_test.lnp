@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"cubemx_test\startup_stm32f407xx.o"
+"cubemx_test\main.o"
+"cubemx_test\gpio.o"
+"cubemx_test\stm32f4xx_it.o"
+"cubemx_test\stm32f4xx_hal_msp.o"
+"cubemx_test\stm32f4xx_hal_tim.o"
+"cubemx_test\stm32f4xx_hal_tim_ex.o"
+"cubemx_test\stm32f4xx_hal_rcc.o"
+"cubemx_test\stm32f4xx_hal_rcc_ex.o"
+"cubemx_test\stm32f4xx_hal_flash.o"
+"cubemx_test\stm32f4xx_hal_flash_ex.o"
+"cubemx_test\stm32f4xx_hal_flash_ramfunc.o"
+"cubemx_test\stm32f4xx_hal_gpio.o"
+"cubemx_test\stm32f4xx_hal_dma_ex.o"
+"cubemx_test\stm32f4xx_hal_dma.o"
+"cubemx_test\stm32f4xx_hal_pwr.o"
+"cubemx_test\stm32f4xx_hal_pwr_ex.o"
+"cubemx_test\stm32f4xx_hal_cortex.o"
+"cubemx_test\stm32f4xx_hal.o"
+"cubemx_test\stm32f4xx_hal_exti.o"
+"cubemx_test\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "cubemx_test\cubemx_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "cubemx_test.map" -o cubemx_test\cubemx_test.axf
